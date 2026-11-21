@@ -1,0 +1,4 @@
+site_name: FlexScreen
+site_url: https://egor0169.github.io/mkdocs-demo1/
+theme:
+  name: material
