@@ -1,0 +1,56 @@
+/* Убираем боковое меню на страницах, где оно не нужно, для более лендингового вида */
+.md-sidebar--secondary {
+  display: none;
+}
+
+.hero-banner {
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(63, 81, 181, 0.1) 0%, rgba(0, 150, 136, 0.1) 100%);
+  border: 1px solid rgba(63, 81, 181, 0.2);
+  margin-bottom: 2rem;
+}
+
+.badge-popular {
+  background-color: #009688;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.order-box {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: var(--md-code-bg-color);
+  margin-bottom: 1.5rem;
+}
+
+.order-box label {
+  display: block;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.order-box select,
+.order-box input[type="date"],
+.order-box input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-size: 0.95rem;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--md-accent-fg-color);
+  margin-top: 1rem;
+}

@@ -1,4 +1,56 @@
-site_name: FlexScreen
+site_name: FlexScreen — Гибкие экраны для кафе и ресторанов
+site_description: Аренда и продажа гибких 4K-экранов FlexScreen FS-1 для съемок контента с фудблогерами.
 site_url: https://egor0169.github.io/mkdocs-demo1/
 theme:
   name: material
+  language: ru
+  palette:
+    # Светлая тема по умолчанию
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Переключить на темную тему
+    # Темная тема
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Переключить на светлую тему
+  features:
+    - navigation.tabs          # Навигация в виде вкладок сверху
+    - navigation.tabs.sticky   # Закрепление шапки при скролле
+    - navigation.top           # Кнопка «Наверх»
+    - content.tabs.link        # Синхронизация вкладок
+
+nav:
+  - Главная: index.md
+  - Прайс-лист: price.md
+  - Характеристики FS-1: specs.md
+  - Документация: docs.md
+  - Частые вопросы: faq.md
+  - Отзывы: reviews.md
+  - Оформление договора: order.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/custom.css
+
+extra_javascript:
+  - assets/order.js
+
+copyright: >
+  © 2026 ООО «ФлексСкрин Рус» | +7 (495) 123-45-67 | hello@flexscreen.ru | г. Москва, ул. Технологическая, д. 1
