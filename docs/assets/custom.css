@@ -93,24 +93,24 @@
 }
 
 /* Фоновая картинка на весь экран */
+/* Фоновая картинка на весь экран */
 body {
   background: url("images/Dabadee\ Dabada.png") center / cover fixed no-repeat;
 }
 
-/* Полупрозрачный блок для основного контента, чтобы текст легко читался */
-.md-main__inner {
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px);
+/* Подложка только под текстовую область, не затрагивая мобильное меню */
+.md-content__inner {
+  background-color: rgba(255, 255, 255, 0.92);
   border-radius: 12px;
   padding: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-/* Адаптация подложки под темную тему сайта */
-[data-md-color-scheme="slate"] .md-main__inner {
-  background-color: rgba(30, 33, 41, 0.9);
+[data-md-color-scheme="slate"] .md-content__inner {
+  background-color: rgba(30, 33, 41, 0.92);
 }
+
 
 /* Отступы между кнопками в баннере и при переносе на новую строку */
 .hero-banner .md-button {
@@ -118,15 +118,43 @@ body {
   margin-bottom: 0.6rem;
 }
 
-/* Исправление мобильного меню поверх размытого фона */
-.md-header {
-  z-index: 4;
+/* Подложка для основного контента */
+.md-content__inner {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.md-overlay {
-  z-index: 5;
+[data-md-color-scheme="slate"] .md-content__inner {
+  background-color: rgba(30, 33, 41, 0.92);
 }
 
-.md-sidebar--primary {
-  z-index: 6 !important;
+/* Подложка для правого оглавления («Содержание») и левой панели только на ПК */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar,
+  .md-sidebar__inner,
+  .md-sidebar__scrollwrap {
+    height: fit-content !important;
+  }
+
+  .md-sidebar__scrollwrap {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 12px;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    max-height: calc(100vh - 6rem);
+  }
+
+  [data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
+    background-color: rgba(30, 33, 41, 0.92);
+  }
+}
+
+
+/* Убираем белую полоску-градиент у заголовка «Содержание» */
+.md-nav__title {
+  background: transparent !important;
+  box-shadow: none !important;
 }
