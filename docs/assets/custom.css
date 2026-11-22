@@ -54,3 +54,30 @@
   color: var(--md-accent-fg-color);
   margin-top: 1rem;
 }
+
+/* Фон для верхней шапки и панели вкладок */
+.md-header,
+.md-tabs {
+  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
+              url("images/SININEN.jpg") center / cover no-repeat;
+}
+
+/* Фоновая картинка на весь экран */
+body {
+  background: url("images/Dabadee\ Dabada.png") center / cover fixed no-repeat;
+}
+
+/* Полупрозрачный блок для основного контента, чтобы текст легко читался */
+.md-main__inner {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Адаптация подложки под темную тему сайта */
+[data-md-color-scheme="slate"] .md-main__inner {
+  background-color: rgba(30, 33, 41, 0.9);
+}
