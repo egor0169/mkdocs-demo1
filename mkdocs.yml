@@ -4,6 +4,7 @@ site_url: https://egor0169.github.io/mkdocs-demo1/
 theme:
   name: material
   language: ru
+  logo: assets/images/REVERSELOGO.png
   palette:
     # Светлая тема по умолчанию
     - scheme: default

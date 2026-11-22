@@ -4,12 +4,43 @@
 }
 
 .hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
   padding: 2rem;
   border-radius: 12px;
   background: linear-gradient(135deg, rgba(63, 81, 181, 0.1) 0%, rgba(0, 150, 136, 0.1) 100%);
   border: 1px solid rgba(63, 81, 181, 0.2);
   margin-bottom: 2rem;
 }
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+  max-width: 180px; /* Регулируй размер логотипа здесь */
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Адаптация для мобильных экранов */
+@media (max-width: 768px) {
+  .hero-banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-logo {
+    max-width: 140px;
+  }
+}
+
 
 .badge-popular {
   background-color: #009688;
@@ -58,8 +89,7 @@
 /* Фон для верхней шапки и панели вкладок */
 .md-header,
 .md-tabs {
-  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
-              url("images/SININEN.jpg") center / cover no-repeat;
+  background-color:#042a54
 }
 
 /* Фоновая картинка на весь экран */
@@ -80,4 +110,10 @@ body {
 /* Адаптация подложки под темную тему сайта */
 [data-md-color-scheme="slate"] .md-main__inner {
   background-color: rgba(30, 33, 41, 0.9);
+}
+
+/* Отступы между кнопками в баннере и при переносе на новую строку */
+.hero-banner .md-button {
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
 }

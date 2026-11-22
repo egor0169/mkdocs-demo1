@@ -1,13 +1,26 @@
 <div class="hero-banner" markdown="1">
 
+<div class="hero-text" markdown="1">
+
 # Гибкие экраны для кафе и ресторанов
 
 Проводите съемки с фудблогерами и получайте нативную рекламу с помощью продвинутого оборудования для контента.
 
 [Узнать цену →](price.md){ .md-button .md-button--primary }
-[О продукте ↓](#3-причины-выбрать-flexscreen){ .md-button }
+
+[Характеристики →](specs.md){ .md-button }
+
 
 </div>
+
+<div class="hero-logo" markdown="1">
+
+![Логотип FlexScreen](assets/images/LOGO-PNG.png)
+
+</div>
+
+</div>
+
 
 === "Съемка контента в кафе"
     ![Съемка в кафе](assets/images/STREAM.jpeg)
