@@ -117,3 +117,16 @@ body {
   margin-right: 0.6rem;
   margin-bottom: 0.6rem;
 }
+
+/* Исправление мобильного меню поверх размытого фона */
+.md-header {
+  z-index: 4;
+}
+
+.md-overlay {
+  z-index: 5;
+}
+
+.md-sidebar--primary {
+  z-index: 6 !important;
+}
