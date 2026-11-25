@@ -13,7 +13,7 @@
 <select id="order-plan">
   <option value="rent_week">Аренда экрана FS-1 на 1 неделю — 14 990 ₽</option>
   <option value="rent_month" selected>Аренда экрана FS-1 на 1 месяц — 49 990 ₽</option>
-  <option value="rent_year">Аренда экрана FS-1 на 1 год — 499 000 ₽</option>
+  <option value="rent_year">Аренда экрана FS-1 на 1 год — 290 990 ₽</option>
   <option value="buy">Покупка экрана FS-1 в собственность — 499 000 ₽</option>
 </select>
 
