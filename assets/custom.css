@@ -1,0 +1,160 @@
+/* Убираем боковое меню на страницах, где оно не нужно, для более лендингового вида */
+.md-sidebar--secondary {
+  display: none;
+}
+
+.hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(63, 81, 181, 0.1) 0%, rgba(0, 150, 136, 0.1) 100%);
+  border: 1px solid rgba(63, 81, 181, 0.2);
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+  max-width: 180px; /* Регулируй размер логотипа здесь */
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Адаптация для мобильных экранов */
+@media (max-width: 768px) {
+  .hero-banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-logo {
+    max-width: 140px;
+  }
+}
+
+
+.badge-popular {
+  background-color: #009688;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.order-box {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: var(--md-code-bg-color);
+  margin-bottom: 1.5rem;
+}
+
+.order-box label {
+  display: block;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.order-box select,
+.order-box input[type="date"],
+.order-box input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-size: 0.95rem;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--md-accent-fg-color);
+  margin-top: 1rem;
+}
+
+/* Фон для верхней шапки и панели вкладок */
+.md-header,
+.md-tabs {
+  background-color:#042a54
+}
+
+/* Фоновая картинка на весь экран */
+/* Фоновая картинка на весь экран */
+body {
+  background: url("images/Dabadee\ Dabada.png") center / cover fixed no-repeat;
+}
+
+/* Подложка только под текстовую область, не затрагивая мобильное меню */
+.md-content__inner {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+[data-md-color-scheme="slate"] .md-content__inner {
+  background-color: rgba(30, 33, 41, 0.92);
+}
+
+
+/* Отступы между кнопками в баннере и при переносе на новую строку */
+.hero-banner .md-button {
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Подложка для основного контента */
+.md-content__inner {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+[data-md-color-scheme="slate"] .md-content__inner {
+  background-color: rgba(30, 33, 41, 0.92);
+}
+
+/* Подложка для правого оглавления («Содержание») и левой панели только на ПК */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar,
+  .md-sidebar__inner,
+  .md-sidebar__scrollwrap {
+    height: fit-content !important;
+  }
+
+  .md-sidebar__scrollwrap {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 12px;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    max-height: calc(100vh - 6rem);
+  }
+
+  [data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
+    background-color: rgba(30, 33, 41, 0.92);
+  }
+}
+
+
+/* Убираем белую полоску-градиент у заголовка «Содержание» */
+.md-nav__title {
+  background: transparent !important;
+  box-shadow: none !important;
+}
