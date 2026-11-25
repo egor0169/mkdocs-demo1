@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const plans = {
     rent_week: { name: "Аренда экрана FS-1 на 1 неделю", price: 14990, isRent: true },
     rent_month: { name: "Аренда экрана FS-1 на 1 месяц", price: 49990, isRent: true },
-    rent_year: { name: "Аренда экрана FS-1 на 1 год", price: 499000, isRent: true },
+    rent_year: { name: "Аренда экрана FS-1 на 1 год", price: 290990, isRent: true },
     buy: { name: "Покупка экрана FS-1 в собственность", price: 499000, isRent: false }
   };
 
